@@ -24,6 +24,8 @@ There are 4 main process steps of the protocol:
 3. Verification/Approval: A composable add on for contributions to assign a level of verification at the contribution level.
 4. Value Loop: The ability for a contributor or DAO to derive value from the protocol by reading and using the primitive data
 
+![Protocol Porcess](https://lh3.googleusercontent.com/5i-JD0NSpfyAPTKMRxcsMoHFQFolLBZbIKzhoYqhzUPF-sWy-Ts9fyC-jeCd_BwdQAsVqhM7Ze3NgMLANfKB1YCOZSHJxLu2ds5xHIK9tQkl0fdx32mxiL92vYwDn5kMvegVEtU)
+
 We think this workstream will focus on the first two steps, Reporting and Minting.  While the other two steps need to be considered in the design choices, they should be composable and will mainly be driven by another work team.
 
 **Note:** While there is a major UI component of how someone will interact with the protocol, this group will focus specifically on the protocol and not the UI/UX a user goes through on the protocol interactions.
