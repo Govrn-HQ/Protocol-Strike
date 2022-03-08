@@ -2,20 +2,14 @@
 
 ## Context:
 
----
-
 For the next 4 months, we want to focus on building out our Protocol that creates a new contribution primitive aimed at recording off chain DAO contributions/engagements on chain.  This is not only a key building block for Govrn, but provides a key piece of missing DAO infrastructure - the ability for DAO contributors to own their physical value or sweat equity contributions.
 
 ## Key Drivers/Team:
-
----
 
 - Drivers (2): Keating, Scott
 - Contributors:
 
 ## Summary:
-
----
 
 There are 4 main process steps of the protocol:
 
