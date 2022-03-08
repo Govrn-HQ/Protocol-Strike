@@ -1,4 +1,4 @@
-# Protocol-Strike
+# Protocol Working Team
 
 ## Context:
 
