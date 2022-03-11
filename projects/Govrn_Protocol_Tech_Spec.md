@@ -14,7 +14,7 @@
 - Contract for Non-transferrable NFTs
 - 
 
-### Commponents
+### Components
 
 
 #### Solidity
@@ -28,37 +28,66 @@ Contribution Model
 | Date of Engagement | datetime |     |     |
 | Name | string |     |     |
 | Details | text |     |     |
-| Proof | string: link | link to an image |     |
+| Proof | string: link | link to an image/ceramic metadata |     |
 | Partners in Contribution | string | list |     |
-| Time Scope | options | currently, something else, not sure |     |
-
+| Time Scope | options | currently, something else, not sure |
+| Attestations | array of attestors |     |
 
 #### Procotols and Design
 
-Requirements
+__Requirements__
 
 - Non-transferrable
 - Conforms to ERC721 for visibility in ecosystem
 - Can mint to any address
+- Specific templates for each activity
+- Allow template and activity to be created simultaneously
 
-
-Flows
+__Flows__
 
 ![](https://i.imgur.com/iI6WILE.png)
 
+__Functions__
+
+```solidity
+function mintContribution(
+    string identifier,
+    uint256 date_of_engagement,
+    string name, // template? has details
+    string notes,
+    string proof,
+    string[] partners_in_contribution,
+)
+function attestContribution(
+    string identifier,
+)
+function bulkMint()
+function bulkAttest()
+```
+
+__Events__
+
+```solidity
+event ContributionMinted()
+event ContributionAttested()
+```
 
 #### Backend
 
 - Subgraph
 - Bot
     - Discord Receiver
-    - 
 - Data Pipelines (Plugins)
     - Twitter API
     - Github
     - Discourse
     - SourceCred
     - StackExchange
+
+Pre-Processing
+
+- Contribution Staging
+- Schema
 
 #### Frontend
 
@@ -76,7 +105,6 @@ Flows
 - Email notification with summary
 - Dashboard with reporting
 
-
 ### Questions
 1. Are there any existing procotols we could leverage to generate these NFTs?
     - ERC721 compatible
@@ -86,13 +114,13 @@ Flows
     - Permissionless Minting of Contributions
         - gasless
     - Template editor(s)
-2. Which plarforms do we prioritize for reporting?
+2. Which plarforms do we prioritize for automated reporting?
     - twitter
     - github
     - sourceCred?
 3. How we handle users/Daos attesting to a transaction? How do we prevent sybil attacks? Is their protocols we can leverage here.
     - Can we update the metadata of the NFT?
-        - Have anoher NFT that relates back?
+        - Have another NFT that relates back?
         - We can potentially update the NFT uri?
             - Permissioning would be tricky
     - Sybil Solutions
@@ -110,6 +138,13 @@ Flows
 
 ### Next Steps
 
+3/11
+- Talk to flip
+- Drop a schema for the database
+- Setup contract template
+- Maybe start contract dev next week
+
+3/8
 - Finalize Contract requirements
 - Investigate some protocols
 - Continue refine the rest of the doc
