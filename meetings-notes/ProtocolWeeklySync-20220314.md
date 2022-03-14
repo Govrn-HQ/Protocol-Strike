@@ -9,6 +9,7 @@ Agenda:
    1. Is create function ready?
    2. Readiness to go live? I think it's just dependent on the reporting form live?
 3. Review Compensation Structure
+4. Review assumptions in Preliminary Tech Spec
 
 ## Linear App
 
