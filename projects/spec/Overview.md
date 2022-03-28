@@ -20,10 +20,10 @@
 
 ### Solidity
 
-`Contribution` Model
+#### `Contribution` Model
 
-|name| type | storage | note |
-|----|------|------|------|
+| name | type | storage | note |
+|------|------|------|------|
 | Identifier | string |     |     |
 | Date of Submission | datetime |     |     |
 | Date of Engagement | datetime |     |     |
@@ -32,6 +32,14 @@
 | Proof | string: link | link to an image/ceramic metadata |     |
 | Partners in Contribution | string | list |     |
 | Attestations | array of attestor's signatures |     |
+
+#### `Attestation` Model
+
+| name | type | storage | note |
+|------|------|------|------|
+| Identifier | string |     |     |
+| Confidence | enum |     |     |
+| Date of Submission | datetime |     |     |
 
 ### Procotols and Design
 
@@ -121,7 +129,7 @@ Pre-Processing
 
 ## Supported Networks
 
-The initial take is to complete the integration for a single chain assuming DAOs and contributors are on that chain. We'll set aside some research opportunities to understand how [Multi Chain attestations](](./Multi_Chain_Protocol)) could be counted by partners.
+The initial take is to complete the integration for a single chain assuming DAOs and contributors are on that chain. We'll set aside some research opportunities to understand how [Multi Chain attestations](./Multi_Chain_Protocol) could be counted by partners.
 
 ### Primary Chain
 - Gnosis Chain

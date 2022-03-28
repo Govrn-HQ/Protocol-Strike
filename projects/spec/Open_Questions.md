@@ -9,6 +9,7 @@
 - Does an array of signatures work for handling attestations in this version? 
 
 ### 3/14
+
 1. Are there any existing procotols we could leverage to generate these NFTs?
     - ERC721 compatible
         - Nontransferable, [Maker Badges](https://github.com/naszam/maker-badges)
@@ -39,6 +40,11 @@
       - If I tweet about govrn, do I need to attest to that, then Kevin minted that tweet and then I can confirm.
 
 ## Next Steps
+
+### 3/21
+
+- wireframing v1 reporting, portal, attestations sessions
+- dbdiagram
 
 ### 3/17
 
