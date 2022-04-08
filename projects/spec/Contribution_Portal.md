@@ -2,23 +2,30 @@
 
 The Contribution Portal provides a historical view of the user's contributions allowing them to attribute them to specific organizations or attest with their own proof.
 
-## Table
-
-| field             | note |
-| ----------------- | ---- |
-| contribution      |      |
-| contribution date |      |
-| proof link        |      |
-
 ## Screen(s)
 
-Overview Screen
+### Overview Screen
 
-[contribution main screen]
+- Name
+- Date
+- Attestations - count of attestations with link to full attestation list
+- Verification Level
+- DAOs - attributed orgs to the contribution
+- Status
 
-Contribution Filters
+<img src="./../../media/my_contributions.png" alt="" width="500px" />
 
-[contribution filters available]
+### Contribution Types
+
+- Name
+- Last Occurance
+- DAO attributed, if available
+
+<img src="./../../media/contribution_types.png" alt="" width="500px" />
+
+### Attribute to DAO Modal
+
+<img src="./../../media/attribute_to_dao.png" alt="" width="500px" />
 
 ## User Journeys
 
