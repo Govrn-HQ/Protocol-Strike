@@ -104,13 +104,14 @@ Moloch DAOs can interact with the govrn protocol via minions. Calling `attest` w
     - Discourse [+]
     - SourceCred [+]
     - StackExchange [+]
-- [DB Schema](https://dbdiagram.io/d/623520f00ac038740c5e0a0a)
+- Postgres DB
 - [Email notification](./Notifications.md) with summary
 
 Pre-Processing
 
 - Contribution Staging
-- Schema
+- [Initial Database Schema](https://dbdiagram.io/d/623520f00ac038740c5e0a0a)
+  - [Ref Output](./dbSchema.dbsql)
 
 ### Frontend
 

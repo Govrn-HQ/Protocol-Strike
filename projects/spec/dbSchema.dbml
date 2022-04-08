@@ -1,0 +1,84 @@
+Table contributions {
+    id pk
+    status contribution_status
+    activity_type fk [ref: - activity_types.id]
+    name string
+    profile id [ref: - profiles.id]
+    date_of_submission datetime
+    date_of_engagement datetime
+    details text
+    proof string
+    partners string[]
+    attestations ref [ref: < attestations.id]
+}
+
+Table activity_types {
+    id pk
+    category activity_categories
+    short_id string [note: "needed?"]
+    active boolean
+    guild fk [ref: - guilds.id, note: "not required"]
+}
+
+Table users {
+    id pk
+    discord_id number
+}
+
+Table profiles {
+    id pk
+    user_id fk [ref: > users.id]
+    guild_id fk [ref: > guilds.id]
+    display_name string
+    eth_address string
+    full_name string
+}
+
+Table attestations {
+    id pk
+    confidence attestation_confidence
+    profile int [ref: - profiles.id]
+    date_of_attestation datetime
+}
+
+Table guilds {
+    id pk
+    discord_id int
+    name string
+    congrats_channel_id id
+    logo string [note: "or image"]
+}
+
+Table contribution_flows {
+    id pk
+    guild fk [ref: - guilds.id]
+    activity_type pk [ref: < activity_types.id]
+    order number
+    instructions text
+}
+
+enum activity_categories {
+    Content
+    Events
+    Treasury
+    Swag
+    Product
+    "Open Source"
+    Community
+    Grants
+    Governance
+}
+
+enum contribution_status {
+    preparing
+    staged
+    minted
+}
+
+enum attestation_confidence {
+    witnessed
+    verified_proof
+    hearsay
+    implicit
+    unsure
+}

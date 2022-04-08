@@ -12,7 +12,13 @@ The reporting form accompanies the [Discord bot](./Bot_Spec.md) as the means to 
 - Proof of contribution
 - Partners in Contribution
 
-### Screen
+### Screens
 
-[reporting_form_screen]
+**Reporting Form**
+
+<img src="./../../media/reporting_form.png" alt="" width="500px" />
+
+**Proof Modal**
+
+<img src="./../../media/proof_modal.png" alt="" width="500px">
 

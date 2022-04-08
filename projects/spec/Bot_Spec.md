@@ -11,5 +11,8 @@ Kevin is our friendly office bot that gathers contributions from contributors an
 /add_onboarding_contributions # Ask user whether they have completed the initial contributions
 ```
 
+## Prospective Commands
 
+- `/list` - get a list of recent contributions
+- `/attest` - attest to a contribution
 
