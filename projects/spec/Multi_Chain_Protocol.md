@@ -1,6 +1,6 @@
 # Multi-Chain Protocol
 
-Chain differences are minimal so deploying the main contract to multiple chains is straight forward it to get rolling assuming the universes don't want to co-mingle. But it'd be ideal if DAOs and contributors didn't need to worry about being on synchronous chains.
+Chain differences are minimal so deploying the main contract to multiple chains is straightforward to get rolling assuming the universes don't want to co-mingle. But it'd be ideal if DAOs and contributors didn't need to worry about being on synchronous chains.
 
 ## Chain Deploys for v1
 
